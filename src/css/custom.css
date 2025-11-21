@@ -4,6 +4,10 @@
   padding-bottom: 30px;
 }
 
+.masthead{
+    min-height: 100vh;   
+}
+
 .splash-container {
     position: relative;                /* Wichtig! Damit ::before und ::after relativ positioniert werden können */
     /* min-height: 100vh;                  Beispiel: voller Bildschirm, kannst du anpassen */
