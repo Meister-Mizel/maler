@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: visioncortex VTracer 0.6.4 -->
+
+<svg
+   version="1.1"
+   width="400"
+   height="400"
+   id="svg3"
+   sodipodi:docname="logo-q-4000x4000.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs3" />
+  <sodipodi:namedview
+     id="namedview3"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showguides="true"
+     inkscape:zoom="1.10875"
+     inkscape:cx="285.00564"
+     inkscape:cy="154.67869"
+     inkscape:window-width="2048"
+     inkscape:window-height="1089"
+     inkscape:window-x="4472"
+     inkscape:window-y="140"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3">
+    <sodipodi:guide
+       position="199.32356,183.54002"
+       orientation="1,0"
+       id="guide3"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <path
+     d="m 0,-0.47831349 66.797189,0 c 0,0 107.219091,107.65403349 123.362251,123.15943349 C 232.11311,81.790651 274.22872,40.582801 316.63775,-0.31887566 L 381.68112,-0.47831349 382,358 H 329 L 328,66 190.19617,203.45096 54,67 53,358 H 0 Z"
+     fill="#003366"
+     transform="translate(9,21)"
+     id="path1"
+     sodipodi:nodetypes="ccccccccccccc"
+     inkscape:label="M1" />
+  <path
+     d="M 0,0 C 0,0 53.53949,52.406259 110.32356,107.88726 136.15528,82.055539 178.87601,41.826381 223,0 L 223.1274,224.11274 185,224 184,91 110.30891,160.21082 c 0,0 -48.320946,-45.22286 -72.30891,-69.21082 L 37,224 H 0 Z"
+     fill="#339933"
+     transform="translate(89,155)"
+     id="path2"
+     inkscape:label="M2"
+     sodipodi:nodetypes="ccccccccccc"
+     style="fill:#336633;fill-opacity:1" />
+  <path
+     d="M 0,0 50.29425,45.901917 102,0 V 74 H 0 Z"
+     fill="#ff9900"
+     transform="translate(149,305)"
+     id="path3"
+     sodipodi:nodetypes="cccccc"
+     inkscape:label="M3" />
+</svg>

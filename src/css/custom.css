@@ -1,0 +1,73 @@
+.masthead .container img.logo{
+  width: clamp(250px, 20vw, 300px);
+  height: auto;
+}
+
+.splash-container {
+    position: relative;                /* Wichtig! Damit ::before und ::after relativ positioniert werden können */
+    min-height: 100vh;                 /* Beispiel: voller Bildschirm, kannst du anpassen */
+    padding: 50px;
+    overflow: hidden;                  /* Damit die Kleckse nicht rausgucken, falls zu groß */    
+    color: #333;
+    text-align: center;
+}
+
+/* Splash oben links */
+.splash-container::before {
+    content: '';
+    position: absolute;
+    top: -150px;
+    left: -200px;
+    width: 400px;
+    height: 400px;
+    z-index: -1;
+    /*background: radial-gradient(circle, #ff5e3a 10%, #ff9500 70%, transparent 70%);*/
+    /*
+    opacity: 0.6;
+                    hinter dem Inhalt 
+    transform: rotate(20deg);   macht es organischer 
+    */
+    border-radius: 50%;
+    
+    background: url('../assets/splashes/splash_blue.svg') no-repeat;
+    background-size: contain;
+}
+
+/* Splash unten rechts */
+.splash-container::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 400px;
+    height: 400px;
+    background: url('../assets/splashes/splash_orange.svg') no-repeat;    
+    z-index: -1;        
+}
+
+.footer-mizel {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 100%);
+    border-top: 5px solid #003366; /* Mizel-Akzentfarbe */
+}
+
+.footer-mizel a:hover {
+    color: #24819e !important;
+    transition: all 0.3s;
+}
+
+.footer-mizel .btn-success {
+    background-color: #25d366; /* Original WhatsApp-Grün */
+    border: none;
+}
+
+.footer-mizel .btn-success:hover {
+    background-color: #128c7e;
+    transform: translateY(-2px);
+}
+
+span.rev { unicode-bidi:bidi-override; direction:rtl }
+span.rev.email:before { content:"ed.lezim-retsiem" }
+span.rev.email:after { content:"@relam" }
+span.rev.phone:before { content:"80653942 " }
+span.rev.phone:after { content:" 251 94+" }
+

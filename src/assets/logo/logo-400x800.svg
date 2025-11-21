@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: visioncortex VTracer 0.6.4 -->
+
+<svg
+   version="1.1"
+   width="941.50195"
+   height="398.41895"
+   id="svg3"
+   sodipodi:docname="logo-400x800.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs3" />
+  <sodipodi:namedview
+     id="namedview3"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showguides="true"
+     inkscape:zoom="1.265"
+     inkscape:cx="600"
+     inkscape:cy="197.2332"
+     inkscape:window-width="2048"
+     inkscape:window-height="1089"
+     inkscape:window-x="4472"
+     inkscape:window-y="140"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3">
+    <sodipodi:guide
+       position="199.32356,185.12103"
+       orientation="1,0"
+       id="guide3"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="468.0947,381.73885"
+       orientation="0,-1"
+       id="guide6"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="413.97971,22.776054"
+       orientation="0,-1"
+       id="guide7"
+       inkscape:locked="false" />
+    <inkscape:page
+       x="0"
+       y="0"
+       width="941.50195"
+       height="398.41895"
+       id="page7"
+       margin="0 283.79446 0 0"
+       bleed="0" />
+  </sodipodi:namedview>
+  <path
+     d="m 9,18.150145 h 66.797189 c 0,0 107.219091,107.654035 123.362251,123.159435 41.95367,-40.89047 84.06928,-82.098321 126.47831,-122.999998 L 390.68112,18.150145 391,376.62846 H 338 L 337,84.628458 199.19617,222.07942 63,85.628458 62,376.62846 H 9 Z"
+     fill="#003366"
+     id="path1"
+     sodipodi:nodetypes="ccccccccccccc"
+     inkscape:label="M1" />
+  <path
+     d="m 89,152.62846 c 0,0 53.53949,52.40626 110.32356,107.88726 C 225.15528,234.684 267.87601,194.45484 312,152.62846 L 312.1274,376.7412 274,376.62846 l -1,-133 -73.69109,69.21082 c 0,0 -48.32095,-45.22286 -72.30891,-69.21082 l -1,133 H 89 Z"
+     fill="#339933"
+     id="path2"
+     inkscape:label="M2"
+     sodipodi:nodetypes="ccccccccccc"
+     style="fill:#336633;fill-opacity:1" />
+  <path
+     d="M 149,302.62846 199.29425,348.53038 251,302.62846 v 74 H 149 Z"
+     fill="#ff9900"
+     id="path3"
+     sodipodi:nodetypes="cccccc"
+     inkscape:label="M3" />
+  <text
+     xml:space="preserve"
+     style="font-size:126.667px;line-height:1.05;font-family:sans-serif"
+     x="454.52313"
+     y="106.05462"
+     id="text3"><tspan
+       sodipodi:role="line"
+       x="454.52313"
+       y="106.05462"
+       id="tspan4"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:126.667px;line-height:1.05;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold';fill:#003366;fill-opacity:1"
+       inkscape:label="M1-Maler">Maler</tspan><tspan
+       sodipodi:role="line"
+       x="454.52313"
+       y="241.08022"
+       id="tspan5"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:126.667px;line-height:1.05;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold';fill:#336633;fill-opacity:1"
+       inkscape:label="M2-Meister">Meister</tspan><tspan
+       sodipodi:role="line"
+       x="454.52313"
+       y="376.1058"
+       id="tspan6"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:126.667px;line-height:1.05;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold';fill:#ff9900;fill-opacity:1"
+       inkscape:label="M3-Mizel">Mizel</tspan></text>
+</svg>
