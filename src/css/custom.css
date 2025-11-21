@@ -73,6 +73,10 @@
     /*z-index: -1;*/
 }
 
+.bt-orange {    
+    border-top: 5px solid #f7942e; /* Mizel-Akzentfarbe */
+}
+
 .footer-mizel {
     background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 100%);
     border-top: 5px solid #dc3912; /* Mizel-Akzentfarbe */
