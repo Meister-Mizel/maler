@@ -1,35 +1,58 @@
 .masthead .container img.logo{
   width: clamp(250px, 20vw, 300px);
   height: auto;
+  padding-bottom: 30px;
 }
 
 .splash-container {
     position: relative;                /* Wichtig! Damit ::before und ::after relativ positioniert werden können */
-    min-height: 100vh;                 /* Beispiel: voller Bildschirm, kannst du anpassen */
+    /* min-height: 100vh;                  Beispiel: voller Bildschirm, kannst du anpassen */
     padding: 50px;
     overflow: hidden;                  /* Damit die Kleckse nicht rausgucken, falls zu groß */    
     color: #333;
     text-align: center;
 }
 
-/* Splash oben links */
-.splash-container::before {
-    content: '';
-    position: absolute;
+.splash-container-blue-orange::before{
     top: -150px;
     left: -200px;
     width: 400px;
     height: 400px;
-    z-index: -1;
-    /*background: radial-gradient(circle, #ff5e3a 10%, #ff9500 70%, transparent 70%);*/
-    /*
-    opacity: 0.6;
-                    hinter dem Inhalt 
-    transform: rotate(20deg);   macht es organischer 
-    */
-    border-radius: 50%;
-    
     background: url('../assets/splashes/splash_blue.svg') no-repeat;
+    z-index: -1;
+}
+.splash-container-blue-orange::after{
+    bottom: 0px;
+    right: 0px;
+    width: 400px;
+    height: 400px;
+    background: url('../assets/splashes/splash_orange.svg') no-repeat;
+    z-index: -1;    
+}
+
+.splash-container-green::before{
+    top: 50px;
+    left: -200px;
+    width: 400px;
+    height: 400px;
+    background: url('../assets/splashes/splash_green.svg') no-repeat;
+    z-index: -1;
+}
+
+.splash-container-red::after{
+    bottom: 0px;
+    right: 0px;
+    width: 400px;
+    height: 400px;
+    background: url('../assets/splashes/splash_red.svg') no-repeat; 
+    z-index: -1;   
+}
+
+/* Splash oben links */
+.splash-container::before {
+    content: '';
+    position: absolute;
+    /*z-index: -1;*/
     background-size: contain;
 }
 
@@ -37,12 +60,7 @@
 .splash-container::after {
     content: '';
     position: absolute;
-    bottom: 0px;
-    right: 0px;
-    width: 400px;
-    height: 400px;
-    background: url('../assets/splashes/splash_orange.svg') no-repeat;    
-    z-index: -1;        
+    /*z-index: -1;*/
 }
 
 .footer-mizel {
@@ -50,20 +68,11 @@
     border-top: 5px solid #003366; /* Mizel-Akzentfarbe */
 }
 
-.footer-mizel a:hover {
+.footer-mizel a.link:hover {
     color: #24819e !important;
     transition: all 0.3s;
 }
 
-.footer-mizel .btn-success {
-    background-color: #25d366; /* Original WhatsApp-Grün */
-    border: none;
-}
-
-.footer-mizel .btn-success:hover {
-    background-color: #128c7e;
-    transform: translateY(-2px);
-}
 
 span.rev { unicode-bidi:bidi-override; direction:rtl }
 span.rev.email:before { content:"ed.lezim-retsiem" }
@@ -71,3 +80,90 @@ span.rev.email:after { content:"@relam" }
 span.rev.phone:before { content:"80653942 " }
 span.rev.phone:after { content:" 251 94+" }
 
+
+
+
+        .datenschutz-section,.impressum-section, .agb-section {
+            background: #fff;            
+            min-height: 100vh;
+            padding-top: 100px;
+            padding-bottom: 80px;
+        }
+        .datenschutz-card,.impressum-card, .agb-card {
+            background: #efefef;
+            border: none;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+        .datenschutz-card h1, .impressum-card h1, .agb-card h1{
+            color: #444;
+            font-weight: 700;
+        }
+        .datenschutz-card a,.impressum-card a,.agb-card a {
+            color: #175797;
+            text-decoration: underline;
+        }
+        .datenschutz-card a:hover,.impressum-card a:hover,.agb-card a:hover {
+            color: #3366ff;
+        }
+
+
+        .agb-card ol { counter-reset: item; }
+        .agb-card ol > li { display: block; margin-bottom: 2rem; }
+        .agb-card ol > li:before { content: counters(item, ".") ". "; counter-increment: item; font-weight: bold; color: #444; }
+
+
+/* CSS – 3D Flip + Farbwechsel */
+.icon-3d-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0 15px 0px;
+    perspective: 1000px; /* Wichtig für 3D-Effekt */
+}
+
+.icon-3d-link {
+    display: block;
+    width: 140px;
+    height: 140px;
+    transition: all 0.7s ease-in-out;
+}
+
+.icon-3d {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10%;               /* optional: rundes Icon */
+    box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+    backface-visibility: hidden;      /* verhindert Flimmern beim Drehen */
+    transition: all 0.7s ease-in-out;
+    transform-style: preserve-3d;
+    background-color: #fff;
+}
+
+/* 3D-Drehung + Farbwechsel beim Hover */
+.icon-3d-link:hover .icon-3d {
+    transform: rotateY(360deg);
+}
+/* Noch krassere Variante: Endlos-Drehung bei Hover (wie ein Spinner) */
+.icon-3d-link:hover .icon-3d {
+    transform: translateY(-12px) rotateY(360deg) scale(1.0);
+    filter: 
+        drop-shadow(0 20px 40px rgba(0, 94, 222, 0.4))
+        brightness(0) saturate(100%)
+        invert(30%) sepia(92%) saturate(4100%) hue-rotate(10deg) brightness(1.1);
+    /* → präzise #ff5e3a Farbe aus schwarzem Outline */ 
+}
+
+@keyframes spin3d {
+    0%   { transform: rotateY(0deg); }
+    100% { transform: rotateY(360deg); }
+}
+
+/* Responsiv */
+@media (max-width: 576px) {
+    .icon-3d-link { width: 100px; height: 100px; }
+}
+@media (min-width: 992px) {
+    .icon-3d-link { width: 128px; height: 128px; }
+}
