@@ -7,6 +7,12 @@
 .masthead{
     min-height: 100vh;   
 }
+/* Nur ab 1200px */
+@media (min-width: 900px) {
+    .masthead h1, .masthead .h1 {
+        font-size: 5rem !important;
+    }
+}
 
 .splash-container {
     position: relative;                /* Wichtig! Damit ::before und ::after relativ positioniert werden können */
@@ -69,7 +75,7 @@
 
 .footer-mizel {
     background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 100%);
-    border-top: 5px solid #003366; /* Mizel-Akzentfarbe */
+    border-top: 5px solid #dc3912; /* Mizel-Akzentfarbe */
 }
 
 .footer-mizel a.link:hover {
