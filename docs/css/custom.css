@@ -135,6 +135,7 @@
     height: 400px;
     background: url('../assets/splashes/splash_red.svg') no-repeat;
     z-index: -1;
+    transform: rotate(2deg);
 }
 
 /* Splash oben links */
