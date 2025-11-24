@@ -1,29 +1,34 @@
-.masthead .container img.logo{
-  width: clamp(250px, 20vw, 300px);
-  height: auto;
-  padding-bottom: 20px;
+.masthead .container img.logo {
+    width: clamp(250px, 20vw, 300px);
+    height: auto;
+    padding-bottom: 20px;
 }
 
-.masthead{
-    min-height: 100vh;   
+.masthead {
+    min-height: 100vh;
 }
+
 /* Nur ab 1200px */
 @media (min-width: 900px) {
-    .masthead h1, .masthead .h1 {
+
+    .masthead h1,
+    .masthead .h1 {
         font-size: 5rem !important;
     }
 }
 
 .splash-container {
-    position: relative;                /* Wichtig! Damit ::before und ::after relativ positioniert werden können */
+    position: relative;
+    /* Wichtig! Damit ::before und ::after relativ positioniert werden können */
     /* min-height: 100vh;                  Beispiel: voller Bildschirm, kannst du anpassen */
     padding: 50px;
-    overflow: hidden;                  /* Damit die Kleckse nicht rausgucken, falls zu groß */    
+    overflow: hidden;
+    /* Damit die Kleckse nicht rausgucken, falls zu groß */
     color: #333;
-    text-align: center;
+    z-index: 0;
 }
 
-.splash-container-blue-orange::before{
+.splash-container-blue-orange::before {
     top: -150px;
     left: -200px;
     width: 400px;
@@ -31,31 +36,105 @@
     background: url('../assets/splashes/splash_blue.svg') no-repeat;
     z-index: -1;
 }
-.splash-container-blue-orange::after{
+
+.splash-container-blue-orange::after {
     bottom: 0px;
     right: 0px;
     width: 400px;
     height: 400px;
     background: url('../assets/splashes/splash_orange.svg') no-repeat;
-    z-index: -1;    
+    z-index: -1;
 }
 
-.splash-container-green::before{
+.splash-container-green::before {
     top: 50px;
     left: -200px;
     width: 400px;
     height: 400px;
     background: url('../assets/splashes/splash_green.svg') no-repeat;
     z-index: -1;
+    opacity: 0.5;
 }
 
-.splash-container-red::after{
+.splash-container-pink::before {
+    top: 50px;
+    left: -200px;
+    width: 400px;
+    height: 400px;
+    background: url('../assets/splashes/splash_pink.svg') no-repeat;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.splash-container-violet::before {
+    top: 50px;
+    left: -200px;
+    width: 400px;
+    height: 400px;
+    background: url('../assets/splashes/splash_violet.svg') no-repeat;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.splash-container-cyan::before {
+    top: 50px;
+    left: -200px;
+    width: 400px;
+    height: 400px;
+    background: url('../assets/splashes/splash_cyan.svg') no-repeat;
+    z-index: -1;
+    transform: rotate(70deg);
+    opacity: 0.5;
+}
+
+.splash-container-yellow::before {
+    top: 50px;
+    left: -200px;
+    width: 400px;
+    height: 400px;
+    background: url('../assets/splashes/splash_yellow.svg') no-repeat;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.splash-container-red-left::before {
+    top: 50px;
+    left: -200px;
+    width: 400px;
+    height: 400px;
+    background: url('../assets/splashes/splash_red.svg') no-repeat;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.splash-container-blue::before {
+    top: 50px;
+    left: -200px;
+    width: 400px;
+    height: 400px;
+    background: url('../assets/splashes/splash_blue.svg') no-repeat;
+    z-index: -1;
+    transform: rotate(45deg);
+    opacity: 0.5;
+}
+
+.splash-container-blue-prime::before {
+    top: 50px;
+    left: -200px;
+    width: 400px;
+    height: 400px;
+    background: url('../assets/splashes/splash_blue_prime.svg') no-repeat;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.splash-container-red::after {
     bottom: 0px;
     right: 0px;
     width: 400px;
     height: 400px;
-    background: url('../assets/splashes/splash_red.svg') no-repeat; 
-    z-index: -1;   
+    background: url('../assets/splashes/splash_red.svg') no-repeat;
+    z-index: -1;
 }
 
 /* Splash oben links */
@@ -73,13 +152,15 @@
     /*z-index: -1;*/
 }
 
-.bt-orange {    
-    border-top: 5px solid #f7942e; /* Mizel-Akzentfarbe */
+.bt-orange {
+    border-top: 5px solid #f7942e;
+    /* Mizel-Akzentfarbe */
 }
 
 .footer-mizel {
     background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 100%);
-    border-top: 5px solid #dc3912; /* Mizel-Akzentfarbe */
+    border-top: 5px solid #dc3912;
+    /* Mizel-Akzentfarbe */
 }
 
 .footer-mizel a.link:hover {
@@ -88,43 +169,84 @@
 }
 
 
-span.rev { unicode-bidi:bidi-override; direction:rtl }
-span.rev.email:before { content:"ed.lezim-retsiem" }
-span.rev.email:after { content:"@relam" }
-span.rev.phone:before { content:"80653942 " }
-span.rev.phone:after { content:" 251 94+" }
+span.rev {
+    unicode-bidi: bidi-override;
+    direction: rtl
+}
+
+span.rev.email:before {
+    content: "ed.lezim-retsiem"
+}
+
+span.rev.email:after {
+    content: "@relam"
+}
+
+span.rev.phone:before {
+    content: "80653942 "
+}
+
+span.rev.phone:after {
+    content: " 251 94+"
+}
 
 
 
 
-        .datenschutz-section,.impressum-section, .agb-section {
-            background: #fff;            
-            min-height: 100vh;
-            padding-top: 100px;
-            padding-bottom: 80px;
-        }
-        .datenschutz-card,.impressum-card, .agb-card {
-            background: #efefef;
-            border: none;
-            border-radius: 15px;
-            backdrop-filter: blur(10px);
-        }
-        .datenschutz-card h1, .impressum-card h1, .agb-card h1{
-            color: #444;
-            font-weight: 700;
-        }
-        .datenschutz-card a,.impressum-card a,.agb-card a {
-            color: #175797;
-            text-decoration: underline;
-        }
-        .datenschutz-card a:hover,.impressum-card a:hover,.agb-card a:hover {
-            color: #3366ff;
-        }
+.datenschutz-section,
+.impressum-section,
+.agb-section {
+    background: #fff;
+    min-height: 100vh;
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+.datenschutz-card,
+.impressum-card,
+.agb-card {
+    background: #efefef;
+    border: none;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+.datenschutz-card h1,
+.impressum-card h1,
+.agb-card h1 {
+    color: #444;
+    font-weight: 700;
+}
+
+.datenschutz-card a,
+.impressum-card a,
+.agb-card a {
+    color: #175797;
+    text-decoration: underline;
+}
+
+.datenschutz-card a:hover,
+.impressum-card a:hover,
+.agb-card a:hover {
+    color: #3366ff;
+}
 
 
-        .agb-card ol { counter-reset: item; }
-        .agb-card ol > li { display: block; margin-bottom: 2rem; }
-        .agb-card ol > li:before { content: counters(item, ".") ". "; counter-increment: item; font-weight: bold; color: #444; }
+.agb-card ol {
+    counter-reset: item;
+}
+
+.agb-card ol>li {
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.agb-card ol>li:before {
+    content: counters(item, ".") ". ";
+    counter-increment: item;
+    font-weight: bold;
+    color: #444;
+}
 
 
 /* CSS – 3D Flip + Farbwechsel */
@@ -133,7 +255,8 @@ span.rev.phone:after { content:" 251 94+" }
     justify-content: center;
     align-items: center;
     padding: 30px 0 15px 0px;
-    perspective: 1000px; /* Wichtig für 3D-Effekt */
+    perspective: 1000px;
+    /* Wichtig für 3D-Effekt */
 }
 
 .icon-3d-link {
@@ -147,9 +270,11 @@ span.rev.phone:after { content:" 251 94+" }
     width: 100%;
     height: 100%;
     object-fit: contain;
-    border-radius: 10%;               /* optional: rundes Icon */
-    box-shadow: 0 10px 10px rgba(0,0,0,0.3);
-    backface-visibility: hidden;      /* verhindert Flimmern beim Drehen */
+    border-radius: 10%;
+    /* optional: rundes Icon */
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+    backface-visibility: hidden;
+    /* verhindert Flimmern beim Drehen */
     transition: all 0.7s ease-in-out;
     transform-style: preserve-3d;
     background-color: #fff;
@@ -159,25 +284,46 @@ span.rev.phone:after { content:" 251 94+" }
 .icon-3d-link:hover .icon-3d {
     transform: rotateY(360deg);
 }
+
 /* Noch krassere Variante: Endlos-Drehung bei Hover (wie ein Spinner) */
 .icon-3d-link:hover .icon-3d {
     transform: translateY(-12px) rotateY(360deg) scale(1.0);
-    filter: 
-        drop-shadow(0 20px 40px rgba(0, 94, 222, 0.4))
-        brightness(0) saturate(100%)
-        invert(30%) sepia(92%) saturate(4100%) hue-rotate(10deg) brightness(1.1);
-    /* → präzise #ff5e3a Farbe aus schwarzem Outline */ 
+    filter:
+        drop-shadow(0 20px 40px rgba(0, 94, 222, 0.4)) brightness(0) saturate(100%) invert(30%) sepia(92%) saturate(4100%) hue-rotate(10deg) brightness(1.1);
+    /* → präzise #ff5e3a Farbe aus schwarzem Outline */
 }
 
 @keyframes spin3d {
-    0%   { transform: rotateY(0deg); }
-    100% { transform: rotateY(360deg); }
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
 }
 
 /* Responsiv */
 @media (max-width: 576px) {
-    .icon-3d-link { width: 100px; height: 100px; }
+    .icon-3d-link {
+        width: 100px;
+        height: 100px;
+    }
 }
+
 @media (min-width: 992px) {
-    .icon-3d-link { width: 128px; height: 128px; }
+    .icon-3d-link {
+        width: 128px;
+        height: 128px;
+    }
+}
+
+ul.resize li::marker {
+    font-size: 1.2em;
+    content: '\25CF  '
+}
+
+.sidebar-nav-item.sidebar-submenu a.sidebar-nav-item {
+    padding: 5px;
+    padding-left: 25px;
 }
