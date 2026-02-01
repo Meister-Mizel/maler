@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://maler.meister-mizel.de/sitemap.xml
